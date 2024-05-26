@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gusteau</title>
+</head>
+<link rel="stylesheet" href="Loginstyl.css">
+<header>
+    <h1 class="titulo">Gusteau</h1>
+</header>
+<body>
+    
+    <form id="myForm">
+        <label for="diet">Tipo de dieta <br></label>
+        <select name="diet" id="diet" aria-valuemin="1" required >      
+            <option value="0">Tipo de dieta</option>
+            <option value="1">Keto</option>
+            <option value="2">Paleo</option>
+            <option value="3">Mediterranea</option>
+        </select>
+        <label for="personas"><br> Numero de personas</label>
+        <input type="number" name="personas" id="personas" required min="1" max="7">  <br>
+        <input type="submit" value="enviar" class="entrar">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

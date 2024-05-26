@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+        </style>
+    <title>Gusteau</title>
+</head>
+<link rel="stylesheet" href="bketo.css">
+<header><h1 class="title">Menu Mediterranea</h1></header>
+<body>
+    <div class="seleccion">
+        <form action="">
+            <input type="button" id="entradaBtn" value="entrada">
+            <input type="button"  id="principalBtn" value="principal">
+            <input type="button" id="postreBtn" value="postre">
+        </form>
+    </div>
+    <div class="definicion">
+        <p>
+            La dieta mediterránea es un patrón alimenticio tradicional de los países que bordean el Mar Mediterráneo, como España, Italia y Grecia. Se caracteriza por un alto consumo de frutas, verduras, legumbres, frutos secos, cereales integrales y aceite de oliva; un consumo moderado de pescado y mariscos; y un consumo reducido de carnes rojas y productos lácteos. También incluye una ingesta moderada de vino tinto, generalmente consumido con las comidas. Esta dieta se asocia con múltiples beneficios para la salud, incluyendo una reducción del riesgo de enfermedades cardiovasculares y una mayor longevidad. <br>
+            <br>
+            La dieta mediterránea se puede recomendar a personas con riesgo de enfermedades cardiovasculares, diabetes tipo 2, sobrepeso u obesidad, y enfermedades crónicas como hipertensión y colesterol alto. También es beneficiosa para adultos mayores por sus efectos positivos en la salud cognitiva y para cualquier persona que busque una alimentación balanceada y saludable. Además, los deportistas y personas activas pueden aprovechar su aporte de energía y nutrientes esenciales. Consultar a un profesional de la salud antes de hacer cambios dietéticos es aconsejable, especialmente si existen condiciones médicas preexistentes.        </p>
+    </div>
+    <div class="volver">
+        <input type="submit" value="Volver" onclick="window.location.href='Login.html'">
+    </div>
+    
+    <script>
+        document.getElementById("entradaBtn").addEventListener("click", function() {
+            window.location.href = "mediterranea_entrada.html";
+        });
+        
+        document.getElementById("principalBtn").addEventListener("click", function() {
+            window.location.href = "mediterranea.html";
+        });
+        
+        document.getElementById("postreBtn").addEventListener("click", function() {
+            window.location.href = "mediterranea_postre.html";
+        });
+    </script>
+    
+</body>
+</html>

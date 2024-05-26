@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="Keto.css">
+<body>
+    <h2 class="title">Postre Paleo</h2>
+    <div class="container">
+        <div class="card" class="agregado" data-item-id="Lava Cake">
+
+            <img class="ejemplo1" src="./imangenes/lavacake.jpg" alt="Imagen no encontrada">
+            <p>Lava Cake</p>
+            <ul>
+                <li><input type="number" name="1" id="1.1" value="2" min="0">cocoa sin azucar</li>
+                <li><input type="number" name="1" id="1.2" value="2" min="1">chocolate semiamargo</li>
+                <li><input type="number" name="1" id="1.3" value="2" min="0">mentiquilla</li>
+                <li><input type="checkbox" name="1" id="1.4" checked>yemas de huevo</li>
+                <li><input type="number" name="1" id="1.5" value="38" min="0">azucar</li>
+                <li><input type="number" name="1" id="1.6" value="2" min="0">naranjitas chinas azucaradas</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Lava Cake')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Helado kefir">
+            <img class="ejemplo1" src="./imangenes/heladokefir.jpg" alt="Imagen no encontrada">
+            <p>Helado kefir</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="200" min="0">kefir</li>
+                <li><input type="number" name="1" id="" value="1" min="0">queso mascarpone</li>
+                <li><input type="number" name="1" id="" value="120" min="80">miel de abeja</li>
+                <li><input type="number" name="1" id="" value="1" min="0">Cda. oregano seco</li>
+                <li><input type="number" name="1" id="" value="170" min="0">frutos secos</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Helado kefir')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Pan de mora azul">
+            <img class="ejemplo1" src="./imangenes/panmoraazul.jpg" alt="Imagen no encontrada">
+            <p>Pan de mora azul</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="30" min="0">mantequilla</li>
+                <li><input type="number" name="1" id="" value="20" min="0">leche condensada </li>
+                <li><input type="number" name="1" id="" value="1" min="0">barra de chocolate con leche</li>
+                <li><input type="number" name="1" id="" value="3" min="0">huevo</li>
+                <li><input type="number" name="1" id="" value="250" min="0">harina de trigo</li>
+                <li><input type="number" name="1" id="" value="100" min="0">moras azules</li>
+                <li><input type="number" name="1" id="" value="20" min="0">azucar</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Pan de mora azul')">
+        </div>
+        <div class="card"  class="agregado" data-item-id="Pudin con semillas de chia y fresas">
+            <img class="ejemplo1" src="./imangenes/pudinsemillasdechia.jpg" alt="Imagen no encontrada">
+            <p>Pudin con semillas de chia y fresas</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="125" min="0">crema de leche</li>
+                <li><input type="number" name="1" id="" value="200" min="0">leche</li>
+                <li><input type="number" name="1" id="" value="20" min="0">semillas de chia </li>
+                <li><input type="number" name="1" id="" value="70" min="0">fresas</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Pudin con semillas de chia y fresas')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Sorbete de fresas y naranja">
+            <img class="ejemplo1" src="./imangenes/sorbetedefresas.jpg" alt="Imagen no encontrada">
+            <p>Sorbete de fresas y naranja</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="200" min="0">crema de leche</li>
+                <li><input type="number" name="1" id="" value="2" min="0">naranjas</li>
+                <li><input type="number" name="1" id="" value="10" min="0">fresas</li>
+                <li><input type="number" name="1" id="" value="5" min="0">vainilla</li>
+                <li><input type="number" name="1" id="" value="100" min="0">azucar</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Sorbete de fresas y naranja')">
+        </div>
+    </div>
+    <div class="enviar">
+        <input type="button" value="Volver" onclick="window.history.back()">
+        <input type="button" value="carrito" onclick="enviarPedido()">
+    </div>
+    <script src="paleo.js"></script>
+    <script src="paleoA.js"></script>
+</body>
+</html>

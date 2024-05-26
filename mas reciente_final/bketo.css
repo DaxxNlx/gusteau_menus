@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to left,  #ffbb00d3, #000000);
+}
+.title{
+    color: lightyellow;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    margin: 20px;
+}
+.seleccion {
+    position: absolute;
+    left: 35%;
+    top: 55%;
+    transform: translateY(-50%);
+    padding-right: 20px; /* Espacio entre los botones y el borde derecho */
+}
+
+.definicion {
+    color: black;
+    font-size: larger;
+    position: absolute;
+    right: 10%;
+    top: 35%;
+    transform: translateY(-50%);
+    padding-left: 20px; /* Espacio entre el texto y el borde izquierdo */
+    max-width: 40%;
+    max-height: 5%;
+}
+
+input[type="button"] {
+    font-size: large;
+    display: block;
+    margin-bottom: 100px;  /*espacio vertical entre los botones*/
+    padding: 15px 25px; /* apmlia el espacio interno de los botones */
+    background-color: #e67a15; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+input[type="button"]:hover {
+    background-color: rgb(184, 83, 11); /* Cambio de color al pasar el cursor */
+}
+
+input[type="submit"] {
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 10%; /* Distancia desde la derecha */
+    z-index: 999; /* Para asegurarse de que esté por encima de otros elementos */
+    font-size: large;
+    position: fixed;
+    margin-bottom: 100px;  /*espacio vertical entre los botones*/
+    padding: 15px 25px; /* apmlia el espacio interno de los botones */
+    background-color: #cc6606; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+    max-width: 20%;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(184, 83, 11); /* Cambio de color al pasar el cursor */
+}

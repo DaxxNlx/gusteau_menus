@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gusteau's</title>
+</head>
+<link rel="stylesheet" href="Keto.css">
+<body>
+    <h2 class="title">Postres mediterranos</h2>
+    <div class="container">
+        <div class="card" class="agregado" data-item-id="Baklava">
+
+            <img class="ejemplo1" src="imangenes/Baklava.img" alt="Imagen no encontrada">
+            <p>Baklava</p>
+            <ul>
+                <li><input type="number" name="1" id="1.1" value="1"    min="0">Hojaldre (paquet)</li>
+                <li><input type="number" name="1" id="1.2" value="200"  min="1">Nueces (gr)</li>
+                <li><input type="number" name="1" id="1.3" value="200"  min="0">Almemdras (gr)</li>
+                <li><input type="number" name="1" id="1.4" value="150"  min="1">Azucar (gr)</li>
+                <li><input type="number" name="1" id="1.5" value="200"  min="0">Miel (ml)</li>
+                <li><input type="number" name="1" id="1.6" value="150"  min="0">Mantequilla (gr)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Baklava')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Tiramisu">
+            <img class="ejemplo1" src="imangenes/Tiramisu.img" alt="Imagen no encontrada">
+            <p>Tiramisu</p>
+            <ul>
+                <li><input type="number" name="1" id="1.1" value="200"  min="0">bizcochos de soletilla (gr)</li>
+                <li><input type="number" name="1" id="1.2" value="200"  min="1">cafe (ml)</li>
+                <li><input type="number" name="1" id="1.3" value="500"  min="0">mascarpone (gr)</li>
+                <li><input type="number" name="1" id="1.4" value="4"    min="1">huevos (unid)</li>
+                <li><input type="number" name="1" id="1.5" value="150"  min="0">azucar (gr)</li>
+                <li><input type="number" name="1" id="1.6" value=""     min="0">cacao en polvo (espolvoreado)</li>   
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Tiramisu')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Pastel de santiago">
+            <img class="ejemplo1" src="imangenes/Pastel de santiago.img" alt="Imagen no encontrada">
+            <p>Pastel de santiago</p>
+            <ul>
+                <li><input type="number" name="1" id="1.1" value="250"  min="0">almendras molidas (gr)</li>
+                <li><input type="number" name="1" id="1.2" value="250"  min="1">azucar (gr)</li>
+                <li><input type="number" name="1" id="1.3" value="4"  min="0">huevos (unid)</li>
+                <li><input type="number" name="1" id="1.4" value="1"  min="1">ralladura de limon</li>
+                <li><input type="number" name="1" id="1.5" value="" min="0">azucar glas (decoracion)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Pastel de santiago')">
+        </div>
+        <div class="card"  class="agregado" data-item-id="moussaka de berenjena con miel">
+            <img class="ejemplo1" src="imangenes/moussaka de berenjena con miel.img" alt="Imagen no encontrada">
+            <p>moussaka de berenjena con miel</p>
+            <ul>
+                <li><input type="number" name="1" id="1.1" value="3"    min="0">berenjenas (unid)</li>
+                <li><input type="number" name="1" id="1.2" value="100"  min="1">miel (ml)</li>
+                <li><input type="number" name="1" id="1.3" value="1"    min="0">canela (cucharada)</li>
+                <li><input type="number" name="1" id="1.4" value="50"   min="1">almendras (gr)</li>
+                <li><input type="number" name="1" id="1.5" value="50"   min="0">azucar (gr)</li>
+                <li><input type="number" name="1" id="1.6" value="2"    min="0">clavos (unid)</li>
+                <li><input type="number" name="1" id="1.6" value="100"  min="0">limon (ml)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('moussaka de berenjena con miel')">
+        </div>
+        <div class="card" class="agregado" data-item-id="crema catalana">
+            <img class="ejemplo1" src="imangenes/crema catalana.img" alt="Imagen no encontrada">
+            <p>crema catalana</p>
+            <ul>
+                <li><input type="number" name="1" id="1.1" value="500"  min="0">leches (ml)</li>
+                <li><input type="number" name="1" id="1.2" value="4"  min="1">yemas de huevo (unid)</li>
+                <li><input type="number" name="1" id="1.3" value="150"  min="0">azucar (gr)</li>
+                <li><input type="number" name="1" id="1.4" value="30"  min="1">maicena (gr)</li>
+                <li><input type="number" name="1" id="1.5" value="1" min="0">canela en rama</li>
+                <li><input type="number" name="1" id="1.6" value="1"  min="0">ralladura de limon</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('crema catalana')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Cascus de frutas secas y miel">
+            <img class="ejemplo1" src="imangenes/Cascus de frutas secas y miel.img" alt="Imagen no encontrada">
+            <p>Cascus de frutas secas y miel</p>
+            <ul>
+                <li><input type="number" name="1" id="1.1" value="200"  min="0">Cascus (gr)</li>
+                <li><input type="number" name="1" id="1.2" value="100"  min="1">Almendras (gr)</li>
+                <li><input type="number" name="1" id="1.3" value="100"  min="0">Pistachos (gr)</li>
+                <li><input type="number" name="1" id="1.4" value="100"  min="1">Pasas (gr)</li>
+                <li><input type="number" name="1" id="1.5" value="100" min="0">Datiles (gr)</li>
+                <li><input type="number" name="1" id="1.6" value="100"  min="0">miel (ml)</li>
+                <li><input type="number" name="1" id="1.6" value="1"  min="0">canela (unid)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Cascus de frutas secas y miel')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Arroz en leche">
+            <img class="ejemplo1" src="imangenes/arroz en leche.img" alt="Imagen no encontrada">
+            <p>Arroz en leche</p>
+            <ul>
+                <li><input type="number" name="1" id="1.1" value="200"  min="0">Arroz (gr)</li>
+                <li><input type="number" name="1" id="1.2" value="1"  min="1">Leche (lt)</li>
+                <li><input type="number" name="1" id="1.3" value="150"  min="0">azucar (gr)</li>
+                <li><input type="number" name="1" id="1.4" value="1"  min="1">Cascaras de limon</li>
+                <li><input type="number" name="1" id="1.5" value="1" min="0">Canela en rama</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Arroz en leche')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Natilla">
+            <img class="ejemplo1" src="imangenes/natilla.img" alt="Imagen no encontrada">
+            <p>Natilla</p>
+            <ul>
+                <li><input type="number" name="1" id="1.1" value="500"  min="0">Leche (ml)</li>
+                <li><input type="number" name="1" id="1.2" value="4"  min="1">Huevos  (unid)</li>
+                <li><input type="number" name="1" id="1.3" value="100"  min="0">azucar (gr)</li>
+                <li><input type="number" name="1" id="1.4" value="30"  min="1">maicena (gr)</li>
+                <li><input type="number" name="1" id="1.5" value="1" min="0">canela en rama (unid)</li>
+                <li><input type="number" name="1" id="1.6" value="100"  min="0">Vainilla</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Natilla')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Helado de pistacho">
+            <img class="ejemplo1" src="imangenes/tomateyquesoentrada.jpg" alt="Imagen no encontrada">
+            <p>Helado de pistacho</p>
+            <ul>
+                <li><input type="number" name="1" id="1.1" value="500"  min="0">leche (ml)</li>
+                <li><input type="number" name="1" id="1.2" value="250"  min="1">Nata (ml)</li>
+                <li><input type="number" name="1" id="1.3" value="150"  min="0">azucar (gr)</li>
+                <li><input type="number" name="1" id="1.4" value="150"  min="1">Pistachos (150)</li>
+                <li><input type="number" name="1" id="1.5" value="" min="0">Vainilla</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Helado de pistacho')">
+        </div>
+    </div>
+    <div class="enviar">
+        <input type="button" value="Volver" onclick="window.history.back()">
+        <input type="button" value="carrito" onclick="enviarPedido()">
+    </div>
+    <script src="keto.js"></script>
+    <script src="ketoA.js"></script>
+</body>
+</html>

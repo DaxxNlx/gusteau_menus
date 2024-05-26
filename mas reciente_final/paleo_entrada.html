@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="Keto.css">
+<body>
+    <h2 class="title">Entrada Paleo</h2>
+    <div class="container">
+        <div class="card" class="agregado" data-item-id="Acelgas con nueces">
+            <img class="ejemplo1" src="./imangenes/acelgasconnuecesentrada.jpg" alt="Imagen no encontrada">
+            <p>Acelgas con nueces</p>
+            <ul>
+                <li><input type="number" name="1" id="1.1" value="200" min="0">Acelga suiza (gr)</li>
+                <li><input type="number" name="1" id="1.2" value="2" min="1">Dientes de ajo (picados)</li>
+                <li><input type="number" name="1" id="1.3" value="2" min="0">Cda. de vinagre</li>
+                <li><input type="checkbox" name="1" id="1.4" checked>Nueces (picadas)</li>
+                <li><input type="number" name="1" id="1.5" value="38" min="0">Apio (gr, picado)</li>
+                <li><input type="number" name="1" id="1.6" value="2" min="0">Cda. de aceite de oliva</li>
+                <li><input type="number" name="1" id="1.7" value="1" min="0">Cebolla (picada)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Acelgas con nueces')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Col rizada">
+            <img class="ejemplo1" src="./imangenes/colrizadaentrada.jpg" alt="Imagen no encontrada">
+            <p>Col rizada</p>
+            <ul>
+                <li><input type="number" name="2" id="2.1" value="230" min="0">Col rizada (gr, picada)</li>
+                <li><input type="number" name="2" id="2.2" value="1" min="0">Diente de ajo (picado)</li>
+                <li><input type="number" name="2" id="2.3" value="1" min="0">Cda. de aceite de sésamo</li>
+                <li><input type="number" name="2" id="2.4" value="1" min="0">Cda. de salsa de soja</li>
+                <li><input type="number" name="2" id="2.5" value="1" min="0">Cda. de semillas de sésamo</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Col rizada')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Gravlax a la parrilla">
+            <img class="ejemplo1" src="./imangenes/gravlaxalaparrillaentrada.jpg" alt="Imagen no encontrada">
+            <p>Gravlax a la parrilla</p>
+            <ul>
+                <li><input type="number" name="3" id="3.1" value="2" min="0">Cda. de sal marina</li>
+                <li><input type="number" name="3" id="3.2" value="1" min="0">Cda. de azúcar</li>
+                <li><input type="number" name="3" id="3.3" value="1" min="0">Cda. de pimienta blanca</li>
+                <li><input type="number" name="3" id="3.4" value="1" min="0">Manojo de eneldo fresco</li>
+                <li><input type="number" name="3" id="3.5" value="500" min="0">Filete de salmón (gr)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Gravlax a la parrilla')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Pollo empanizado con semillas de calabaza">
+            <img class="ejemplo1" src="./imangenes/polloempanizadodecalabazaentrada.jpg" alt="Imagen no encontrada">
+            <p>Pollo empanizado con semillas de calabaza</p>
+            <ul>
+                <li><input type="number" name="4" id="4.1" value="100" min="0">Semillas de calabaza (gr, molidas)</li>
+                <li><input type="number" name="4" id="4.2" value="200" min="0">Pechuga de pollo (gr, en tiras)</li>
+                <li><input type="number" name="4" id="4.3" value="50" min="0">Queso parmesano (gr, rallado)</li>
+                <li><input type="number" name="4" id="4.4" value="1" min="0">Cda. de orégano</li>
+                <li><input type="checkbox" name="4" id="4.5" checked>Sal</li>
+                <li><input type="number" name="4" id="4.6" value="1" min="0">Cda. de pimentón</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Pollo empanizado con semillas de calabaza')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Salmón pochado">
+            <img class="ejemplo1" src="./imangenes/salmonpochadoentrada.jpg" alt="Imagen no encontrada">
+            <p>Salmón pochado</p>
+            <ul>
+                <li><input type="number" name="5" id="5.1" value="500" min="0">Filete de salmón (gr)</li>
+                <li><input type="number" name="5" id="5.2" value="1" min="0">Cda. de pimienta negra</li>
+                <li><input type="number" name="5" id="5.3" value="1" min="0">Hoja de laurel</li>
+                <li><input type="checkbox" name="5" id="5.4" checked>Sal</li>
+                <li><input type="number" name="5" id="5.5" value="1" min="0">Cebolla (picada)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Salmón pochado')">
+        </div>
+    </div>
+    <div class="enviar">
+        <input type="button" value="Volver" onclick="window.history.back()">
+        <input type="button" value="carrito" onclick="enviarPedido()">
+    </div>
+    <script src="paleo.js"></script>
+    <script src="paleoA.js"></script>
+</body>
+</html>

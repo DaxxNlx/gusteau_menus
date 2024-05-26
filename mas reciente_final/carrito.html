@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #ffbb00d3, #000000);    
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            width: 300px;
+            background-color: #fcbd5e;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card p {
+            padding: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .card ul li {
+            padding: 5px 10px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .card input[type="number"] {
+            width: calc(100% - 50px);
+            padding: 10px;
+            margin: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #333;
+            font-size: 16px;
+            text-align: center;
+            outline: none;
+        }
+
+        .card input[type="number"]:focus {
+            background-color: #ffffff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .card input[type="checkbox"] {
+            margin-right: 10px;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background-color: #ffffff;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card input[type="checkbox"]::after {
+            content: '\2713';
+            font-size: 16px;
+            color: transparent;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: color 0.3s ease;
+        }
+
+        .card input[type="checkbox"]:checked {
+            background-color: #4CAF50;
+            border-color: #4CAF50;
+        }
+
+        .card input[type="checkbox"]:checked::after {
+            color: #ffffff;
+        }
+
+        .card input[type="button"] {
+            width: 45%;
+            padding: 10px;
+            margin: 10px 5%;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .card input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .enviar {
+            position: fixed;
+            bottom: 20px; /* Distancia desde la parte inferior */
+            right: 20px; /* Distancia desde la derecha */
+            z-index: 999; /* Para asegurarse de que esté por encima de otros elementos */
+        }
+
+        .enviar input[type="button"] {
+    padding: 15px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.enviar input[type="button"]:hover {
+    background-color: #45a049;
+}
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        p.no-items {
+            text-align: center;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="enviar">
+        <input type="button" value="Volver" onclick="window.history.back()">
+    </div>
+    <div class="container">
+        <h2>Contenido del Carrito</h2>
+        <div id="carrito-container">
+            <!-- Aquí se mostrará el contenido del carrito -->
+        </div>
+    </div>
+
+    <script>
+        // Recuperar el pedido del almacenamiento local
+        var pedidoJSON = localStorage.getItem('pedido');
+        var carritoContainer = document.getElementById('carrito-container');
+
+        if (pedidoJSON) {
+            var pedido = JSON.parse(pedidoJSON);
+
+            // Recorrer el pedido y mostrar cada plato con sus ingredientes
+            pedido.forEach(function(plato) {
+                var platoDiv = document.createElement('div');
+                platoDiv.classList.add('card');
+                var platoHTML = '<p>' + plato.nombre + '</p><ul>';
+                plato.ingredientes.forEach(function(ingrediente) {
+                    platoHTML += '<li>' + ingrediente.nombre + ': ' + ingrediente.cantidad + '</li>';
+                });
+                platoHTML += '</ul>';
+                platoDiv.innerHTML = platoHTML;
+                carritoContainer.appendChild(platoDiv);
+            });
+        } else {
+            carritoContainer.innerHTML = '<p class="no-items">No hay elementos en el carrito.</p>';
+        }
+    </script>
+</body>
+</html>

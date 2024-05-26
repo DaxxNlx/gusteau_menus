@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gusteau's</title>
+</head>
+<link rel="stylesheet" href="Keto.css">
+<body>
+    <h2 class="title">Entrada Keto</h2>
+    <div class="container">
+        <div class="card" class="agregado" data-item-id="Aguacate Relleno de Atún">
+
+            <img class="ejemplo1" src="imangenes/aguacateentrada.jpg" alt="Imagen no encontrada">
+            <p>Aguacate Relleno de Atún</p>
+            <ul>
+                <li><input type="number" name="1" id="1.1" value="2" min="0"> Aguacates (unidades)</li>
+                <li><input type="number" name="1" id="1.2" value="1" min="1"> Lata de atún</li>
+                <li><input type="number" name="1" id="1.3" value="2" min="0"> Cda. de mayonesa</li>
+                <li><input type="checkbox" name="1" id="1.4" checked> Sal y pimienta</li>
+                <li><input type="number" name="1" id="1.5" value="50" min="0"> Cebolla morada (gr, finamente picada)</li>
+                <li><input type="number" name="1" id="1.6" value="1" min="0"> Cda. de cilantro picado</li>
+            </ul>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Aguacate Relleno de Atún')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Espárragos Envueltos en Tocino">
+            <img class="ejemplo1" src="imangenes/esparragosentrada.jpg" alt="Imagen no encontrada">
+            <p>Espárragos Envueltos en Tocino</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="10" min="0"> Espárragos (unidades)</li>
+                <li><input type="number" name="1" id="" value="10" min="0"> Lonchas de tocino</li>
+                <li><input type="number" name="1" id="" value="1" min="0"> Cda. de aceite de oliva</li>
+                <li><input type="checkbox" name="1" id="" checked> Sal y pimienta</li>
+                <li><input type="number" name="1" id="" value="1" min="0"> Diente de ajo (picado)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Espárragos Envueltos en Tocino')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Huevos Rellenos con Aguacate y Bacon">
+            <img class="ejemplo1" src="imangenes/aguacatebaconentrada.jpg" alt="Imagen no encontrada">
+            <p>Huevos Rellenos con Aguacate y Bacon</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="2" min="0"> Huevos</li>
+                <li><input type="number" name="1" id="" value="1" min="0"> Aguacate (unidad)</li>
+                <li><input type="number" name="1" id="" value="2" min="0"> Lonchas de bacon</li>
+                <li><input type="number" name="1" id="" value="1" min="0"> Cda. de mayonesa</li>
+                <li><input type="number" name="1" id="" value="1" min="0"> Pizca de sal y pimienta</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Huevos Rellenos con Aguacate y Bacon')">
+        </div>
+        <div class="card"  class="agregado" data-item-id="Rollitos de Pepino con Salmón Ahumado">
+            <img class="ejemplo1" src="imangenes/rollossalmonentrada.jpg" alt="Imagen no encontrada">
+            <p>Rollitos de Pepino con Salmón Ahumado</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="1" min="0"> Pepino (unidad)</li>
+                <li><input type="number" name="1" id="" value="100" min="0"> Salmón ahumado (gr)</li>
+                <li><input type="number" name="1" id="" value="2" min="0"> Cda. de queso crema</li>
+                <li><input type="number" name="1" id="" value="1" min="0"> Cda. de eneldo fresco</li>
+                <li><input type="number" name="1" id="" value="1" min="0"> Limón (jugo)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Rollitos de Pepino con Salmón Ahumado')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Tomates Cherry Rellenos de Queso de Cabra y Albahaca"> 
+            <img class="ejemplo1" src="imangenes/tomateyquesoentrada.jpg" alt="Imagen no encontrada">
+            <p>Tomates Cherry Rellenos de Queso de Cabra y Albahaca</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="10" min="0"> Tomates cherry</li>
+                <li><input type="number" name="1" id="" value="100" min="0"> Queso de cabra (gr)</li>
+                <li><input type="number" name="1" id="" value="2" min="0"> Cda. de albahaca fresca picada</li>
+                <li><input type="number" name="1" id="" value="1" min="0"> Cda. de aceite de oliva</li>
+                <li><input type="number" name="1" id="" value="1" min="0"> Pizca de sal y pimienta</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Tomates Cherry Rellenos de Queso de Cabra y Albahaca')">
+        </div>
+    </div>
+    <div class="enviar">
+        <input type="button" value="Volver" onclick="window.history.back()">
+        <input type="button" value="carrito" onclick="enviarPedido()">
+    </div>
+    <script src="keto.js"></script>
+    <script src="ketoA.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gusteau's</title>
+</head>
+<link rel="stylesheet" href="Keto.css">
+<body>
+    <h2 class="title">Postres Keto</h2>
+    <div class="container">
+        <div class="card" class="agregado" data-item-id="Cheesecake de Fresa sin Azúcar">
+
+            <img class="ejemplo1" src="imangenes/cheescakefresaspostres.jpg" alt="Imagen no encontrada">
+            <p>Cheesecake de Fresa sin Azúcar</p>
+            <ul>
+                <li><input type="number" name="1" id="1.1" value="200" min="0"> Queso crema (gr)</li>
+                <li><input type="number" name="1" id="1.2" value="3" min="1"> Huevos</li>
+                <li><input type="number" name="1" id="1.3" value="100" min="0"> Fresas (gr, picadas)</li>
+                <li><input type="number" name="1" id="1.4" value="1" min="0"> Cda. de edulcorante</li>
+                <li><input type="number" name="1" id="1.5" value="50" min="0"> Harina de almendra (gr)</li>
+                <li><input type="number" name="1" id="1.6" value="2" min="0"> Cda. de mantequilla</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Cheesecake de Fresa sin Azúcar')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Brownies de Chocolate Keto">
+            <img class="ejemplo1" src="imangenes/browiesketopostres.jpg" alt="Imagen no encontrada">
+            <p>Brownies de Chocolate Keto</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="100" min="0"> Harina de almendra (gr)</li>
+                <li><input type="number" name="1" id="" value="50" min="0"> Cacao en polvo (gr)</li>
+                <li><input type="number" name="1" id="" value="1" min="0"> Cda. de polvo de hornear</li>
+                <li><input type="number" name="1" id="" value="150" min="0"> Edulcorante granulado (gr)</li>
+                <li><input type="number" name="1" id="" value="100" min="0"> Mantequilla (gr, derretida)</li>
+                <li><input type="number" name="1" id="" value="3" min="0"> Huevos</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Brownies de Chocolate Keto')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Tarta de Limón y Coco sin Gluten">
+            <img class="ejemplo1" src="imangenes/tartadelimon222postres.jpg" alt="Imagen no encontrada">
+            <p>Tarta de Limón y Coco sin Gluten</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="200" min="0"> Harina de coco (gr)</li>
+                <li><input type="number" name="1" id="" value="100" min="0"> Limón (jugo)</li>
+                <li><input type="number" name="1" id="" value="1" min="0"> Cda. de ralladura de limón</li>
+                <li><input type="number" name="1" id="" value="3" min="0"> Huevos</li>
+                <li><input type="number" name="1" id="" value="5" min="0"> Edulcorante (gr)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Tarta de Limón y Coco sin Gluten')">
+        </div>
+        <div class="card"  class="agregado" data-item-id="Mousse de Chocolate Avellanado">
+            <img class="ejemplo1" src="imangenes/mousseavelladopostres.jpg" alt="Imagen no encontrada">
+            <p>Mousse de Chocolate Avellanado</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="90" min="0"> Chocolate negro (gr)</li>
+                <li><input type="number" name="1" id="" value="125" min="0"> Nata para montar (ml)</li>
+                <li><input type="number" name="1" id="" value="30" min="0"> Avellanas picadas (gr)</li>
+                <li><input type="number" name="1" id="" value="5" min="0"> Edulcorante (gr)</li>
+                <li><input type="number" name="1" id="" value="2" min="0"> Cda. de esencia de vainilla</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Mousse de Chocolate Avellanado')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Helado de Coco y Frambuesa">
+            <img class="ejemplo1" src="imangenes/heladococoframburesapostres.jpg" alt="Imagen no encontrada">
+            <p>Helado de Coco y Frambuesa</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="90" min="0"> Chocolate negro (gr)</li>
+                <li><input type="number" name="1" id="" value="125" min="0"> Nata para montar (ml)</li>
+                <li><input type="number" name="1" id="" value="5" min="0"> Avellanas picadas (gr)</li>
+                <li><input type="number" name="1" id="" value="5" min="0"> Edulcorante (gr)</li>
+                <li><input type="number" name="1" id="" value="2" min="0"> Cda. de esencia de vainilla</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Helado de Coco y Frambuesa')">
+        </div>
+    </div>
+    <div class="enviar">
+        <input type="button" value="Volver" onclick="window.history.back()">
+        <input type="button" value="carrito" onclick="enviarPedido()">
+    </div>
+    <script src="keto.js"></script>
+    <script src="ketoA.js"></script>
+</body>
+</html>

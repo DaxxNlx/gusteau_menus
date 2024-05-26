@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="Keto.css">
+<body>
+    <h2 class="title">Menú Mediterraneo</h2>
+    <div class="container">
+        <div class="card" class="agregado" data-item-id-="POLLO AL LIMON">
+
+            <img class="ejemplo1" src="imangenes/Pollo limon.jpeg" alt="Imagen no encontrada">
+            <p>POLLO AL LIMON</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="4" min="0">Pechugas de pollo (Unidades)</li>
+                <li><input type="number" name="1" id="" value="2" min="1">Limón (Unidades)</li>
+                <li><input type="number" name="1" id="" value="3" min="0">Dientes de Ajo</li>
+                <li><input type="number" name="1" id="" value="3" min="0">Aceite De Oliva (cucharadas)</li>
+                <li><input type="number" name="1" id="" value="20" min="0">Sal (gr)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('POLLO AL LIMON')">
+        </div>
+        <div class="card" class="agregado" data-item-id-="PINCHOS MORUNOS">
+            <img class="ejemplo1" src="imangenes/Pinchos morunos.jpeg" alt="Imagen no encontrada">
+            <p>PINCHOS MORUNOS</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="4" min="0">Carne de cordero o pollo (Unidades)<li>
+                <li><input type="number" name="1" id="" value="20" min="0">Comino (gr)</li>
+                <li><input type="number" name="1" id="" value="2" min="80">Pimentón (Unidades)</li>
+                <li><input type="number" name="1" id="" value="1" min="0">Dientes de Ajo</li>
+                <li><input type="number" name="1" id="" value="2" min="0">Aceite de oliva (Cucharadas)</li>
+            </ul>
+            <input type="button" value="agregar"onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('PINCHOS MORUNOS')">
+        </div>
+        <div class="card" class="agregado" data-item-id-="KEBAB DE POLLO">
+            <img class="ejemplo1" src="imangenes/Kebab de pollo.jpeg" alt="Imagen no encontrada">
+            <p>KEBAB DE POLLO</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="3"   min="0">Pechugas de pollo (Unidades)</li>
+                <li><input type="number" name="1" id="" value="200" min="0">Yogur natural (gr)</li>
+                <li><input type="number" name="1" id="" value="1"   min="0">Dientes de Ajo</li>
+                <li><input type="number" name="1" id="" value="26"  min="0">Sal (gr)</li>
+                <li><input type="number" name="1" id="" value="20"  min="0">Comino (gr)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('KEBAB DE POLLO')">
+        </div>
+        <div class="card" class="agregado" data-item-id-="ALBONDIGAS EN SALSA DE TOMATE">
+            <img class="ejemplo1" src="imangenes/Albondigas en salsa.avif" alt="Imagen no encontrada">
+            <p>ALBONDIGAS EN SALSA DE TOMATE</p>
+            <ul>
+                <li><input type="number" name="2" id="" value="500"   min="0">Carne picada de res o pollo (gr)</li>
+                <li><input type="number" name="4" id="" value="4"   min="0">Tomates (Unidades)</li>
+                <li><input type="number" name="1" id="" value="1"   min="0">Cebolla (Unidades)</li>
+                <li><input type="number" name="2" id="" value="2"   min="0">Aceite de oliva (cucharadas)</li>
+                <li><input type="number" name="2" id="" value="2"   min="0">Dientes de Ajo</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('ALBONDIGAS EN SALSA DE TOMATE')">
+        </div>
+        <div class="card" class="agregado" data-item-id-="CHURRASCO DE TERNERA">
+            <img class="ejemplo1" src="imangenes/Churrasco de ternera.jpeg" alt="Imagen no encontrada">
+            <p>CHURRASCO DE TERNERA</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="600"   min="0">Filetes de ternera (gr)</li>
+                <li><input type="number" name="1" id="" value="2"   min="0">Romero (Ramas)</li>
+                <li><input type="number" name="1" id="" value="3"   min="0">Dientes de Ajo</li>
+                <li><input type="number" name="1" id="" value="1"   min="0">Sal (Cucharada)</li>
+                <li><input type="number" name="1" id="" value="3"   min="0">Aceite de oliva (Cucharada)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('CHURRASCO DE TERNERA')">
+        </div>
+        <div class="card" class="agregado" data-item-id-="ESTOFADO DE CORDERO CON ALBARICOQUES">
+            <img class="ejemplo1" src="imangenes/Estofado de cordero con albaricoques secos.jpeg" alt="Imagen no encontrada">
+            <p>ESTOFADO DE CORDERO CON ALBARICOQUES</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="400"   min="0">Carne de cordero (gr)</li>
+                <li><input type="number" name="1" id="" value="60"   min="0">Albaricoques secos (gr)</li>
+                <li><input type="number" name="1" id="" value="2"   min="0">Cebolla (Unidades)</li>
+                <li><input type="number" name="1" id="" value="200"   min="0">Caldo de carne (ml) </li>
+                <li><input type="number" name="1" id="" value="1"   min="0">Ras el hanout (mezcla de especias marroquí)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('ESTOFADO DE CORDERO CON ALBARICOQUES')">
+        </div>
+        <div class="card" class="agregado"data-item-id-="POLLO A LA MANDARINA CON JENGIBRE">
+            <img class="ejemplo1" src="imangenes/Pollo a la mandarina con jengibre.jpeg" alt="Imagen no encontrada">
+            <p>POLLO A LA MANDARINA CON JENGIBRE</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="4"   min="0">Pechugas de pollo (Unidades)</li>
+                <li><input type="number" name="1" id="" value="3"   min="0">Mandarinas (Unidades)</li>
+                <li><input type="number" name="1" id="" value="20"   min="0">Jengibre fresco (gr)</li>
+                <li><input type="number" name="1" id="" value="2"   min="0">Miel (cucharadas)</li>
+                <li><input type="number" name="1" id="" value="3"   min="0">Vinagre de vino blanco (cucharadas)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('POLLO A LA MANDARINA CON JENGIBRE')">
+        </div>
+        <div class="card" class="agregado" data-item-id-="TERNERA CON CIRUELAS Y PIÑONES">
+            <img class="ejemplo1" src="imangenes/Ternera con ciruelas y piñones.jpg" alt="Imagen no encontrada">
+            <p>TERNERA CON CIRUELAS Y PIÑONES</p>
+            <ul>
+                <li><input type="number" name="1" id="" value="600"   min="0">Filetes de ternera (gr)</li>
+                <li><input type="number" name="1" id="" value="100"   min="0">Ciruelas pasas (gr)</li>
+                <li><input type="number" name="1" id="" value="50"   min="0">Piñones (gr)</li>
+                <li><input type="number" name="1" id="" value="1"   min="0">Canela en polvo (cucharadas)</li>
+                <li><input type="number" name="1" id="" value="200"   min="0">Vino tinto (ml)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('TERNERA CON CIRUELAS Y PIÑONES')">
+        </div>
+        <div class="enviar">
+            <input type="button" value="Volver" onclick="window.history.back()">
+            <input type="button" value="carrito" onclick="enviarPedido()">
+        </div>
+    </div>
+    <script src="mediterranea.js"></script>
+    <script src="mediterraneaA.js"></script>
+</body>
+</html>

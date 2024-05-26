@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+        </style>
+    <title>Gusteau</title>
+</head>
+<link rel="stylesheet" href="bketo.css">
+<header><h1 class="title">Menu Keto</h1></header>
+<body>
+    <div class="seleccion">
+        <form action="">
+            <input type="button" id="entradaBtn" value="entrada">
+            <input type="button" id="principalBtn" value="principal">
+            <input type="button" id="postreBtn" value="postre">
+        </form>
+    </div>
+    <div class="definicion">
+        <p>
+            La dieta cetogénica, o dieta keto, es un plan de alimentación bajo en carbohidratos y alto en grasas que ha ganado popularidad por su capacidad para promover la pérdida de peso y mejorar la salud metabólica. Se centra en consumir alimentos que sean ricos en grasas saludables, moderados en proteínas y muy bajos en carbohidratos. El objetivo principal es inducir un estado de cetosis en el cuerpo, donde se quema grasa en lugar de carbohidratos como fuente principal de energía. Esto se logra reduciendo drásticamente la ingesta de carbohidratos, lo que obliga al cuerpo a quemar las reservas de grasa almacenadas para obtener energía. <br>
+            <br>
+            La dieta cetogénica se recomienda para personas con sobrepeso u obesidad, resistencia a la insulina o diabetes tipo 2, síndrome metabólico, epilepsia resistente a tratamientos y algunos atletas activos. Ayuda en la pérdida de peso, estabiliza los niveles de azúcar en la sangre, mejora la sensibilidad a la insulina, controla las convulsiones y puede potencialmente mejorar el rendimiento atlético. Sin embargo, es importante buscar orientación médica antes de comenzar cualquier dieta cetogénica, especialmente para aquellos con condiciones médicas preexistentes.
+        </p>
+    </div>
+    <div class="volver">
+        <input type="submit" value="Volver" onclick="window.location.href='Login.html'">
+    </div>
+    
+    <script>
+        document.getElementById("entradaBtn").addEventListener("click", function() {
+            window.location.href = "keto_entrada.html";
+        });
+        
+        document.getElementById("principalBtn").addEventListener("click", function() {
+            window.location.href = "keto.html";
+        });
+        
+        document.getElementById("postreBtn").addEventListener("click", function() {
+            window.location.href = "keto_postres.html";
+        });
+    </script>
+    
+</body>
+</html>

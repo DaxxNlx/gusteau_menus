@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gusteau's</title>
+</head>
+<link rel="stylesheet" href="Keto.css">
+<body>
+    <h2 class="title">Entrada Mediterranea</h2>
+    <div class="container">
+        <div class="card" class="agregado" data-item-id="Ensaláda Griega">
+
+            <img class="ejemplo1" src="imangenes/EntradaEnsalada.jpg" alt="Imagen no encontrada">
+            <p>Ensaláda Griega</p>
+            <ul>
+                <li><input type="number" name="tomates" value="3" min="0">Tomates medianos (unid)</li>
+                <li><input type="number" name="pepino" value="1" min="0">Pepino (unid)</li>
+                <li><input type="number" name="cebolla" value="1" min="0">Cebolla roja (unid)</li>
+                <li><input type="number" name="pimenton" value="1" min="0">Pimenton verde (unid)</li>
+                <li><input type="number" name="queso_feta" value="150" min="0">Queso feta (gr)</li>
+                <li><input type="number" name="aceitunas" value="100" min="0">Aceitunas Negras (gr)</li>
+                <li><input type="number" name="aceite_oliva" value="2" min="0">Aceite De Oliva (Cucharadas)</li>
+                <li><input type="number" name="vinagre_vino" value="1" min="0">Vinagre De Vino (Cucharadas)</li>
+                <li><input type="number" name="oregano" value="1" min="0">Oregano Seco (unid)</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Ensaláda Griega')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Hummus">
+            <img class="ejemplo1" src="imangenes/Hummus.img" alt="Imagen no encontrada">
+            <p>Hummus</p>
+            <ul>
+                <li><input type="number" name="garbanzos" value="400" min="0">Garbanzos (gr)</li>
+                <li><input type="number" name="tahini" value="2" min="0">Tahini (Cucharadas)</li>
+                <li><input type="number" name="dientes_ajo" value="2" min="0">Dientes de ajo (unid)</li>
+                <li><input type="number" name="jugo_limon" value="3" min="0">Jugo de limon (cucharadas)</li>
+                <li><input type="number" name="aceite_oliva_hummus" value="2" min="0">Aceito de oliva (cucharadas)</li>
+                <li><input type="number" name="comino" value="1" min="0">Comino Molido (cucharadas)</li>
+                <li><input type="number" name="sal_hummus" value="0" min="0">Sal al gusto</li>
+                <li><input type="number" name="agua_hummus" value="0" min="0">Agua</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Hummus')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Caponata Sicilina">
+            <img class="ejemplo1" src="imangenes/Caponata Sicilina.img" alt="Imagen no encontrada">
+            <p>Caponata Sicilina</p>
+            <ul>
+                <li><input type="number" name="2" id="" value="3" min="1">Tomates Medianos (unid)</li>
+                <li><input type="number" name="1" id="" value="2" min="0">Pimiento Rojo (unid)</li>
+                <li><input type="number" name="1" id="" value="1" min="0">Berenjena (unid)</li>
+                <li><input type="number" name="1" id="" value="1" min="0">Cebolla (unid)</li>
+                <li><input type="number" name="2" id="" value="1" min="0">Tallos de apio (unid)</li>
+                <li><input type="number" name="2" id="" value="2" min="0">Acaparras (Cucharadas)</li>
+                <li><input type="number" name="3" id="" value="1" min="0">Aceito de oliva (cucharadas)</li>
+                <li><input type="number" name="2" id="" value="1" min="0">Vinagre de vino tinto (cucharadas)</li>
+                <li><input type="number" name="1" id="" value="1" min="0">Azucar (cucharadas)</li>
+                <li><input type="checkbox" name="" id="" checked>Sal y Pimienta</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Caponata Sicilina')">
+        </div>
+        <div class="card"  class="agregado" data-item-id="Tapenade de Aceitunas">
+            <img class="ejemplo1" src="imangenes/Tapenade de Aceitunas.img" alt="Imagen no encontrada">
+            <p>Tapenade de Aceitunas</p>
+            <ul>
+                <li><input type="number" name="200" id="" value="20" min="0">Aceitunas negras (gr)</li>
+                <li><input type="number" name="2"   id="" value="2" min="0">Fiketes de anchoas (unid)</li>
+                <li><input type="number" name="1"   id="" value="2" min="0">Dientes de ajo (unid)</li>
+                <li><input type="number" name="2"   id="" value="3" min="0">Alcaparras (cucharadas)</li>
+                <li><input type="number" name="2"   id="" value="2" min="0">Aceite de oliva (cucharadas)</li>
+                <li><input type="number" name=""    id="" value="1" min="0">Jugo de medio limon</li>
+                <li><input type="checkbox" name="1"   id="" checked>Pimienta al gusto</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Tapenade de Aceitunas')">
+        </div>
+        <div class="card" class="agregado" data-item-id="Gazpacho Andaluz">
+            <img class="ejemplo1" src="imangenes/Gazpacho Andaluz.img" alt="Imagen no encontrada">
+            <p>Gazpacho Andaluz</p>
+            <ul>
+                <li><input type="number" name="1" id=""  value="250" min="0">Tomates maduros (gr)</li>
+                <li><input type="number" name="1" id=""  value="1" min="0">Pepino (unid)</li>
+                <li><input type="number" name="1" id=""  value="1" min="0">Pimiento verde (unid)</li>
+                <li><input type="number" name="1" id=""  value="2" min="0">Diente de ajo (unid)</li>
+                <li><input type="number" name="50" id="" value="50" min="0">Pan duro (gr)</li>
+                <li><input type="number" name="4" id=""  value="2" min="0">Aceite de oliva (cucharadas)</li>
+                <li><input type="number" name="2" id=""  value="5" min="0">Vino blanco (Cucharadas)</li>
+                <li><input type="checkbox" name="" id="" checked>Sal al gusto</li>
+            </ul>
+            <input type="button" value="agregar" onclick="agregarAlCarrito(this)">
+            <input type="button" value="eliminar" onclick="eliminarDelMenu('Gazpacho Andaluz')">
+        </div>
+    </div>
+    <div class="enviar">
+        <input type="button" value="Volver" onclick="window.history.back()">
+        <input type="button" value="carrito" onclick="enviarPedido()">
+    </div>
+    <script src="mediterranea.js"></script>
+    <script src="mediterraneaA.js"></script>
+</body>
+</html>
